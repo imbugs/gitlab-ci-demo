@@ -6,11 +6,11 @@ job1:
   script:
     - echo "I am job1"
     - echo "I am in test stage"
-	- echo 'NewFile' > ./file
-	- pwd
+    - echo 'NewFile' > ./file
+    - pwd
 job2:
   stage: build
   script:
     - echo "I am job2"
     - echo "I am in build stage"
-	- cat ./file
+    - cat ./file
