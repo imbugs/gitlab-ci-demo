@@ -1,8 +1,6 @@
-# 定义 stages
 stages:
   - build
   - test
-# 定义 job
 job1:
   stage: test
   script:
@@ -10,7 +8,6 @@ job1:
     - echo "I am in test stage"
 	- echo 'NewFile' > ./file
 	- pwd
-# 定义 job
 job2:
   stage: build
   script:
